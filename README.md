@@ -13,10 +13,13 @@ Then open http://localhost:8000
 
 ## Design
 
-Bespoke design built around the client's own logo (pear-tree motif, olive/gold
-on cream) rather than the standard site-factory template — calm, clinical-yet-warm
-wellness aesthetic: Cormorant Garamond serif headings, Jost body copy, organic
-line-art accents echoing the branch/pear motif from the logo.
+As of 2026-07-20, reuses the design system from the Tiago Physio site (source:
+`OneDrive\Documents\Tiago website\`) at Kevin's request — slate (#0f172a) +
+green (#059669) palette, Inter body / DM Serif Display headings, glowing dark
+hero with a live stats card, interactive condition-pill service tabs, numbered
+process steps, testimonial slider, floating "Book Now" button. Content and the
+WhatsApp contact flow are unchanged from the original bespoke build; only the
+visual system was replaced.
 
 ## Sections
 
@@ -28,10 +31,11 @@ Approach (3-step first-visit process), Pricing, Testimonials, Contact
 
 - [ ] Real WhatsApp number — `script.js`, `WHATSAPP_NUMBER` constant
 - [ ] Real contact email (currently `hello@pereiraosteopathy.co.uk`)
-- [ ] Clinic hours, town/city location
+- [ ] Clinic hours (location confirmed: Norwich)
 - [ ] GOsC registration number, Institute of Osteopathy membership status
 - [ ] Real pricing (currently placeholder £65 / £50 / £270)
 - [ ] Real testimonials (currently placeholder quotes)
+- [ ] Real hero stats (patients treated / years experience / satisfaction % — currently 0)
 - [ ] Practitioner bio detail / real photos if the client wants a headshot
 
 ## Scope note (Kevin's records)
