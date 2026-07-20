@@ -12,15 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="grain"></div>
-
-    <header class="site-header" id="top">
+    <header class="site-header" id="navbar">
       <div class="wrap header-inner">
         <a class="brand" href="#top">
           <img
@@ -54,56 +52,116 @@
 
     <main>
       <!-- HERO -->
-      <section class="hero">
-        <svg
-          class="hero-branch hero-branch--left"
-          viewBox="0 0 200 400"
-          aria-hidden="true"
-        >
-          <path d="M10 400 C 20 300, 60 260, 50 180 C 42 120, 90 90, 110 20" />
-          <circle cx="50" cy="180" r="5"></circle>
-          <circle cx="110" cy="20" r="5"></circle>
-          <circle cx="80" cy="130" r="4"></circle>
-        </svg>
+      <section class="hero" id="top">
+        <div class="hero-glow"></div>
+        <div class="hero-glow-2"></div>
+        <div class="hero-grid-bg"></div>
         <div class="wrap hero-inner">
-          <p class="eyebrow">
-            Osteopathy &middot; Massage &middot; Manual Therapy &middot;
-            Wellness
-          </p>
-          <h1>Hands-on care,<br />rooted in expertise.</h1>
-          <p class="hero-lede">
-            Personalised osteopathic treatment to ease pain, restore movement
-            and help your body do what it does best — heal. Every session is
-            tailored to you, not a template.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Book an appointment</a>
-            <a href="#services" class="btn btn-ghost">Explore treatments</a>
+          <div class="hero-text">
+            <div class="hero-tag animate-in delay-1">
+              <span class="tag-dot"></span> Registered Osteopath
+              <span class="placeholder-tag">[Town/city — add]</span>
+            </div>
+            <h1 class="animate-in delay-2">
+              Hands-on care,<br />
+              <span class="highlight">rooted in expertise.</span>
+            </h1>
+            <p class="hero-lede animate-in delay-3">
+              Personalised osteopathic treatment to ease pain, restore movement
+              and help your body do what it does best — heal. Every session is
+              tailored to you, not a template.
+            </p>
+            <div class="hero-actions animate-in delay-4">
+              <a href="#contact" class="btn btn-primary btn-lg">
+                Book an appointment
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#services" class="btn btn-outline btn-lg"
+                >Explore treatments</a
+              >
+            </div>
+            <div class="hero-trust animate-in delay-5">
+              <div class="trust-pill">
+                ✓ GOsC Registered
+                <span class="placeholder-tag">[reg. no. — add]</span>
+              </div>
+              <div class="trust-pill">✓ Member, Institute of Osteopathy</div>
+              <div class="trust-pill">✓ Fully Insured</div>
+              <div class="trust-pill">✓ DBS Checked</div>
+            </div>
+          </div>
+          <div class="hero-card-wrap animate-in delay-3">
+            <div class="hero-card">
+              <div class="hcard-top">
+                <div class="hcard-avatar">P</div>
+                <div class="hcard-info">
+                  <strong>Pereira</strong>
+                  <span>Registered Osteopath</span>
+                </div>
+                <div class="hcard-status">
+                  <span class="status-dot"></span>Available
+                </div>
+              </div>
+              <div class="hcard-stats">
+                <div class="hstat">
+                  <span class="hstat-num" data-count="0">0</span><span>+</span>
+                  <p>Patients Treated</p>
+                </div>
+                <div class="hstat">
+                  <span class="hstat-num" data-count="0">0</span>
+                  <p>Years Experience</p>
+                </div>
+                <div class="hstat">
+                  <span class="hstat-num" data-count="0">0</span><span>%</span>
+                  <p>Satisfaction Rate</p>
+                </div>
+              </div>
+              <a href="#contact" class="hcard-btn">Book a session →</a>
+            </div>
+            <p
+              class="placeholder-tag"
+              style="margin-top: 12px; display: block; text-align: center"
+            >
+              [Hero stats are placeholders — set real numbers before launch]
+            </p>
           </div>
         </div>
-        <svg
-          class="hero-branch hero-branch--right"
-          viewBox="0 0 200 400"
-          aria-hidden="true"
-        >
-          <path
-            d="M190 0 C 180 100, 140 140, 150 220 C 158 280, 110 310, 90 380"
-          />
-          <circle cx="150" cy="220" r="5"></circle>
-          <circle cx="90" cy="380" r="5"></circle>
-          <circle cx="120" cy="270" r="4"></circle>
-        </svg>
+        <div class="scroll-hint">
+          <div class="scroll-dot"></div>
+          <span>Scroll to explore</span>
+        </div>
       </section>
 
       <!-- ABOUT -->
-      <section class="section about" id="about">
+      <section class="section about bg-light" id="about">
         <div class="wrap about-grid">
-          <div class="about-visual" aria-hidden="true">
-            <div class="ring-frame">
-              <img src="images/logo.jpg" alt="" class="ring-frame-img" />
+          <div class="about-img-wrap reveal">
+            <div class="about-img-placeholder">
+              <img
+                src="images/logo.jpg"
+                alt="Pereira Osteopathy & Wellness"
+                class="about-logo-img"
+              />
+              <div class="img-caption">Add a practitioner photo here</div>
+            </div>
+            <div class="about-badge">
+              <span class="badge-icon">🎓</span>
+              <div>
+                <strong>Registered Osteopath</strong>
+                <span>GOsC &middot; Institute of Osteopathy</span>
+              </div>
             </div>
           </div>
-          <div class="about-copy">
+          <div class="about-copy reveal">
             <p class="section-kicker">About the practice</p>
             <h2>Treating the cause, not just the ache</h2>
             <p>
@@ -118,17 +176,24 @@
               your history, your daily life, and how you actually move — whether
               that's at a desk, on a pitch, or carrying a toddler on one hip.
             </p>
-            <ul class="credentials">
-              <li>
-                Registered with the General Osteopathic Council
-                <span class="placeholder-tag">[GOsC reg. no. — add]</span>
-              </li>
-              <li>
-                Member, Institute of Osteopathy
-                <span class="placeholder-tag">[confirm]</span>
-              </li>
-              <li>Fully insured &amp; DBS checked</li>
-            </ul>
+            <div class="about-features">
+              <div class="af-item">
+                <span class="af-icon">📋</span
+                ><span>Full assessment every visit</span>
+              </div>
+              <div class="af-item">
+                <span class="af-icon">🩺</span
+                ><span>Registered &amp; fully insured</span>
+              </div>
+              <div class="af-item">
+                <span class="af-icon">✅</span><span>DBS checked</span>
+              </div>
+              <div class="af-item">
+                <span class="af-icon">📱</span
+                ><span>WhatsApp support between sessions</span>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Book an appointment →</a>
           </div>
         </div>
       </section>
@@ -136,16 +201,27 @@
       <!-- SERVICES -->
       <section class="section services" id="services">
         <div class="wrap">
-          <p class="section-kicker center">What I offer</p>
-          <h2 class="center">Treatments &amp; care</h2>
-          <p class="section-intro center">
-            Four strands of hands-on care, drawn on individually or combined in
-            one session depending on what your body needs.
-          </p>
+          <div class="section-header center" style="margin-bottom: 48px">
+            <p class="section-kicker">What I offer</p>
+            <h2>Treatments &amp; care</h2>
+            <p class="section-intro">
+              Four strands of hands-on care, drawn on individually or combined
+              in one session depending on what your body needs.
+            </p>
+          </div>
 
-          <div class="service-grid">
-            <article class="service-card">
-              <span class="service-icon" aria-hidden="true">
+          <div class="condition-pills">
+            <button class="cpill active" data-info="osteopathy">
+              Osteopathy
+            </button>
+            <button class="cpill" data-info="massage">Massage</button>
+            <button class="cpill" data-info="manual">Manual Therapy</button>
+            <button class="cpill" data-info="wellness">Wellness</button>
+          </div>
+
+          <div class="condition-panel">
+            <div class="cpanel active" id="info-osteopathy">
+              <span class="cpanel-icon" aria-hidden="true">
                 <svg viewBox="0 0 48 48">
                   <path
                     d="M24 6c-7 0-11 6-11 12 0 9 7 12 7 20h8c0-8 7-11 7-20 0-6-4-12-11-12z"
@@ -153,59 +229,64 @@
                   <path d="M24 14v14M18 21h12" />
                 </svg>
               </span>
-              <h3>Osteopathy</h3>
-              <p>
-                Whole-body manual assessment and treatment for back and neck
-                pain, joint stiffness, sports strains and postural complaints —
-                using gentle, precise techniques suited to you.
-              </p>
-            </article>
-
-            <article class="service-card">
-              <span class="service-icon" aria-hidden="true">
+              <div class="cpanel-text">
+                <h3>Osteopathy</h3>
+                <p>
+                  Whole-body manual assessment and treatment for back and neck
+                  pain, joint stiffness, sports strains and postural complaints
+                  — using gentle, precise techniques suited to you.
+                </p>
+              </div>
+            </div>
+            <div class="cpanel" id="info-massage">
+              <span class="cpanel-icon" aria-hidden="true">
                 <svg viewBox="0 0 48 48">
                   <circle cx="24" cy="14" r="6" />
                   <path d="M12 40c0-8 5-14 12-14s12 6 12 14" />
                   <path d="M16 30l-4 6M32 30l4 6" />
                 </svg>
               </span>
-              <h3>Massage</h3>
-              <p>
-                Deep tissue and sports massage to release tight muscles, improve
-                circulation and speed up recovery between training blocks or
-                long working weeks.
-              </p>
-            </article>
-
-            <article class="service-card">
-              <span class="service-icon" aria-hidden="true">
+              <div class="cpanel-text">
+                <h3>Massage</h3>
+                <p>
+                  Deep tissue and sports massage to release tight muscles,
+                  improve circulation and speed up recovery between training
+                  blocks or long working weeks.
+                </p>
+              </div>
+            </div>
+            <div class="cpanel" id="info-manual">
+              <span class="cpanel-icon" aria-hidden="true">
                 <svg viewBox="0 0 48 48">
                   <path d="M10 24h8l4-10 6 20 4-10h6" />
                 </svg>
               </span>
-              <h3>Manual Therapy</h3>
-              <p>
-                Targeted hands-on joint mobilisation and soft-tissue work for
-                long-standing stiffness, old injuries, and areas that don't
-                respond to rest alone.
-              </p>
-            </article>
-
-            <article class="service-card">
-              <span class="service-icon" aria-hidden="true">
+              <div class="cpanel-text">
+                <h3>Manual Therapy</h3>
+                <p>
+                  Targeted hands-on joint mobilisation and soft-tissue work for
+                  long-standing stiffness, old injuries, and areas that don't
+                  respond to rest alone.
+                </p>
+              </div>
+            </div>
+            <div class="cpanel" id="info-wellness">
+              <span class="cpanel-icon" aria-hidden="true">
                 <svg viewBox="0 0 48 48">
                   <path
                     d="M24 42c-8-5-14-11-14-19a9 9 0 0 1 14-7 9 9 0 0 1 14 7c0 8-6 14-14 19z"
                   />
                 </svg>
               </span>
-              <h3>Wellness</h3>
-              <p>
-                Postural guidance, tailored rehab exercises and lifestyle advice
-                so the benefit of each session lasts well beyond the treatment
-                table.
-              </p>
-            </article>
+              <div class="cpanel-text">
+                <h3>Wellness</h3>
+                <p>
+                  Postural guidance, tailored rehab exercises and lifestyle
+                  advice so the benefit of each session lasts well beyond the
+                  treatment table.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -213,46 +294,50 @@
       <!-- APPROACH -->
       <section class="section approach" id="approach">
         <div class="wrap">
-          <p class="section-kicker center">How it works</p>
-          <h2 class="center">Your first visit</h2>
+          <div class="section-header center" style="margin-bottom: 64px">
+            <p class="section-kicker">How it works</p>
+            <h2>Your first visit</h2>
+          </div>
 
-          <ol class="steps">
-            <li class="step">
-              <span class="step-number">01</span>
+          <div class="process-steps">
+            <div class="pstep reveal">
+              <div class="pstep-num">1</div>
               <h3>Consultation</h3>
               <p>
                 We talk through your history, lifestyle and what's brought you
                 in — no assumptions, no rushing.
               </p>
-            </li>
-            <li class="step">
-              <span class="step-number">02</span>
+            </div>
+            <div class="pstep reveal">
+              <div class="pstep-num">2</div>
               <h3>Assessment &amp; treatment</h3>
               <p>
                 A full movement assessment followed by hands-on treatment in the
                 same appointment wherever possible.
               </p>
-            </li>
-            <li class="step">
-              <span class="step-number">03</span>
+            </div>
+            <div class="pstep reveal">
+              <div class="pstep-num">3</div>
               <h3>Ongoing care</h3>
               <p>
                 A clear plan for what comes next — home exercises, follow-up
                 spacing, and honest advice on what you actually need.
               </p>
-            </li>
-          </ol>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- PRICING -->
-      <section class="section pricing" id="pricing">
+      <section class="section pricing bg-light" id="pricing">
         <div class="wrap">
-          <p class="section-kicker center">Investing in how you feel</p>
-          <h2 class="center">Appointments</h2>
-          <p class="section-intro center placeholder-note">
-            Prices below are placeholders — replace with your actual rates.
-          </p>
+          <div class="section-header center" style="margin-bottom: 56px">
+            <p class="section-kicker">Investing in how you feel</p>
+            <h2>Appointments</h2>
+            <p class="section-intro placeholder-note">
+              Prices below are placeholders — replace with your actual rates.
+            </p>
+          </div>
 
           <div class="pricing-grid">
             <div class="price-card">
@@ -263,7 +348,9 @@
                 <li>Hands-on treatment</li>
                 <li>Home exercise plan</li>
               </ul>
-              <a href="#contact" class="btn btn-outline">Book this</a>
+              <a href="#contact" class="btn btn-outline-dark btn-block"
+                >Book this</a
+              >
             </div>
             <div class="price-card price-card--featured">
               <p class="price-badge">Most booked</p>
@@ -274,7 +361,7 @@
                 <li>Progress review</li>
                 <li>Plan adjustments</li>
               </ul>
-              <a href="#contact" class="btn btn-primary">Book this</a>
+              <a href="#contact" class="btn btn-primary btn-block">Book this</a>
             </div>
             <div class="price-card">
               <h3>Course of 6</h3>
@@ -284,7 +371,9 @@
                 <li>Best for ongoing care</li>
                 <li>Priority booking</li>
               </ul>
-              <a href="#contact" class="btn btn-outline">Book this</a>
+              <a href="#contact" class="btn btn-outline-dark btn-block"
+                >Book this</a
+              >
             </div>
           </div>
         </div>
@@ -293,99 +382,197 @@
       <!-- TESTIMONIALS -->
       <section class="section testimonials" id="testimonials">
         <div class="wrap">
-          <p class="section-kicker center">In their words</p>
-          <h2 class="center placeholder-note">
-            Placeholder reviews — swap for real client quotes
-          </h2>
+          <div class="section-header center" style="margin-bottom: 48px">
+            <p class="section-kicker">In their words</p>
+            <h2 class="placeholder-note">
+              Placeholder reviews — swap for real client quotes
+            </h2>
+          </div>
 
-          <div class="testimonial-grid">
-            <blockquote class="testimonial">
-              <p>
-                "First appointment where someone actually listened before
-                treating me. My lower back hasn't felt this good in years."
-              </p>
-              <cite>— Placeholder client, Norwich</cite>
-            </blockquote>
-            <blockquote class="testimonial">
-              <p>
-                "Explained everything clearly, treatment was gentle but
-                effective. Booked the course of six straight away."
-              </p>
-              <cite>— Placeholder client</cite>
-            </blockquote>
-            <blockquote class="testimonial">
-              <p>
-                "Fit me in quickly for a bad shoulder before a marathon.
-                Genuinely grateful."
-              </p>
-              <cite>— Placeholder client</cite>
-            </blockquote>
+          <div class="testimonial-slider">
+            <div class="tslide active">
+              <div class="tcard">
+                <div class="stars">★★★★★</div>
+                <p class="tquote">
+                  "First appointment where someone actually listened before
+                  treating me. My lower back hasn't felt this good in years."
+                </p>
+                <div class="tauthor">
+                  <div class="tavatar">P</div>
+                  <div>
+                    <strong>Placeholder client</strong>
+                    <span>Norwich</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tslide">
+              <div class="tcard">
+                <div class="stars">★★★★★</div>
+                <p class="tquote">
+                  "Explained everything clearly, treatment was gentle but
+                  effective. Booked the course of six straight away."
+                </p>
+                <div class="tauthor">
+                  <div class="tavatar">P</div>
+                  <div>
+                    <strong>Placeholder client</strong>
+                    <span>Follow-up course</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tslide">
+              <div class="tcard">
+                <div class="stars">★★★★★</div>
+                <p class="tquote">
+                  "Fit me in quickly for a bad shoulder before a marathon.
+                  Genuinely grateful."
+                </p>
+                <div class="tauthor">
+                  <div class="tavatar">P</div>
+                  <div>
+                    <strong>Placeholder client</strong>
+                    <span>Sports injury</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tslider-controls">
+            <button class="tprev" id="tPrev" aria-label="Previous">
+              &#8592;
+            </button>
+            <div class="tdots" id="tDots"></div>
+            <button class="tnext" id="tNext" aria-label="Next">&#8594;</button>
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section class="section contact" id="contact">
-        <div class="wrap contact-grid">
-          <div class="contact-info">
-            <p class="section-kicker">Get in touch</p>
-            <h2>Let's get you moving again</h2>
-            <p>
-              Message me directly on WhatsApp or by email, and I'll come back to
-              you to find a time that works.
-            </p>
-
-            <ul class="contact-details">
-              <li>
-                <strong>WhatsApp</strong>
-                <span class="placeholder-tag"
-                  >[+44 7XXX XXXXXX — add real number]</span
-                >
-              </li>
-              <li>
-                <strong>Email</strong>
-                <a href="mailto:hello@pereiraosteopathy.co.uk"
-                  >hello@pereiraosteopathy.co.uk</a
-                >
-                <span class="placeholder-tag">[confirm real address]</span>
-              </li>
-              <li>
-                <strong>Clinic hours</strong>
-                <span class="placeholder-tag"
-                  >[Mon–Fri, 9am–6pm — confirm]</span
-                >
-              </li>
-              <li>
-                <strong>Location</strong>
-                <span class="placeholder-tag">[Town/city, UK — add]</span>
-              </li>
-            </ul>
+      <section class="section contact bg-light" id="contact">
+        <div class="wrap">
+          <div class="quick-contact">
+            <div class="qc-grid">
+              <div class="qc-card">
+                <span class="qc-icon">💬</span>
+                <div class="qc-text">
+                  <strong>WhatsApp</strong>
+                  <span class="placeholder-tag">[+44 7XXX XXXXXX — add]</span>
+                </div>
+              </div>
+              <div class="qc-card">
+                <span class="qc-icon">✉️</span>
+                <div class="qc-text">
+                  <strong>Email</strong>
+                  <span>hello@pereiraosteopathy.co.uk</span>
+                </div>
+              </div>
+              <div class="qc-card">
+                <span class="qc-icon">🕐</span>
+                <div class="qc-text">
+                  <strong>Clinic hours</strong>
+                  <span class="placeholder-tag"
+                    >[Mon–Fri, 9am–6pm — confirm]</span
+                  >
+                </div>
+              </div>
+              <div class="qc-card">
+                <span class="qc-icon">📍</span>
+                <div class="qc-text">
+                  <strong>Location</strong>
+                  <span class="placeholder-tag">[Town/city, UK — add]</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <form class="contact-form" id="contactForm" novalidate>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+          <div class="contact-grid">
+            <div class="contact-info">
+              <p class="section-kicker">Get in touch</p>
+              <h2>Let's get you moving again</h2>
+              <p>
+                Message me directly on WhatsApp or by email, and I'll come back
+                to you to find a time that works.
+              </p>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+              <ul class="contact-details">
+                <li>
+                  <strong>Registration</strong>
+                  General Osteopathic Council
+                  <span class="placeholder-tag">[GOsC reg. no. — add]</span>
+                </li>
+                <li>
+                  <strong>Membership</strong>
+                  Institute of Osteopathy
+                  <span class="placeholder-tag">[confirm]</span>
+                </li>
+                <li>
+                  <strong>Cover</strong>
+                  Fully insured &amp; DBS checked
+                </li>
+              </ul>
+            </div>
 
-            <label for="message">What's going on?</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <form class="contact-form" id="contactForm" novalidate>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
 
-            <button type="submit" class="btn btn-primary btn-block">
-              Send via WhatsApp
-            </button>
-            <p class="form-note">
-              Prefer email? Every message also gives you a direct
-              <a href="mailto:hello@pereiraosteopathy.co.uk">mailto</a> link.
-            </p>
-          </form>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">What's going on?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Send via WhatsApp
+              </button>
+              <p class="form-note">
+                Prefer email? Every message also gives you a direct
+                <a href="mailto:hello@pereiraosteopathy.co.uk">mailto</a>
+                link.
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <span class="brand-name">Pereira Osteopathy &amp; Wellness</span>
+          <p>
+            Hands-on osteopathy, massage, manual therapy and wellness care —
+            treating the cause, not just the ache.
+          </p>
+          <p class="footer-reg">
+            GOsC Reg. No. <span class="placeholder-tag">[add]</span>
+          </p>
+        </div>
+        <div class="footer-nav">
+          <h4>Explore</h4>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <a href="mailto:hello@pereiraosteopathy.co.uk"
+            >✉️ hello@pereiraosteopathy.co.uk</a
+          >
+          <p>
+            🕐 Mon–Fri, 9am–6pm <span class="placeholder-tag">[confirm]</span>
+          </p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
         <p>
           &copy; <span id="year"></span> Pereira Osteopathy &amp; Wellness. All
           rights reserved.
@@ -398,6 +585,11 @@
         </p>
       </div>
     </footer>
+
+    <a href="#contact" class="fab" aria-label="Book a session">
+      <span class="fab-icon">📅</span>
+      <span class="fab-label">Book Now</span>
+    </a>
 
     <script src="script.js"></script>
   </body>
